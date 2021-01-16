@@ -51,6 +51,7 @@ namespace WinForm_With_EFCore
         private void DGVEmployees_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             emp.Id = Convert.ToInt32(DGVEmployees.SelectedRows[0].Cells[0].Value.ToString());
+            label6.Text = emp.Id.ToString();
             //emp.FirstName = DGVEmployees.SelectedRows[0].Cells[1].Value.ToString();
             //emp.LastName = DGVEmployees.SelectedRows[0].Cells[2].Value.ToString();
             //emp.Address = DGVEmployees.SelectedRows[0].Cells[3].Value.ToString();
@@ -65,7 +66,8 @@ namespace WinForm_With_EFCore
 
         private void BtnDelete_Click(object sender, EventArgs e)
         {
-            empRepo.Delete(GetEmployee());
+            var emp = GetEmployee();
+            empRepo.Delete(emp);
             LoadDGV();
         }
 
