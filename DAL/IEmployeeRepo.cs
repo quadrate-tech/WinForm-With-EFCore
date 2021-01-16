@@ -8,7 +8,7 @@ namespace WinForm_With_EFCore.DAL
 {
     internal interface IEmployeeRepo
     {
-        Employee Create(string firstName, string lastName, string address, string homePhone, string cellPhone);
+        Employee Create(Employee emp);
 
         Employee Update(Employee employee);
 

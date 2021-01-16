@@ -11,9 +11,9 @@ namespace WinForm_With_EFCore.DAL
         private readonly EmployeeContext empContext;
         public EmployeeRepo(EmployeeContext employeeContext) => empContext = employeeContext;
 
-        public Employee Create(string firstName, string lastName, string address, string homePhone, string cellPhone)
+        public Employee Create(Employee emp)
         {
-            var data = empContext.Add(new Employee { FirstName = firstName, LastName = lastName, Address = address, HomePhone = homePhone, Mobile = cellPhone });
+            var data = empContext.Add(new Employee { FirstName = emp.FirstName, LastName = emp.LastName, Address = emp.Address, HomePhone = emp.HomePhone, Mobile = emp.Mobile });
             empContext.SaveChanges();
             return data.Entity;
         }
@@ -30,7 +30,5 @@ namespace WinForm_With_EFCore.DAL
             empContext.SaveChanges();
             return data.Entity;
         }
-
-
     }
 }

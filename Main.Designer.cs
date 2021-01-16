@@ -46,7 +46,7 @@ namespace WinForm_With_EFCore
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.BtnDelete = new System.Windows.Forms.Button();
             this.BtnView = new System.Windows.Forms.Button();
-            this.BtnEdit = new System.Windows.Forms.Button();
+            this.BtnUpdate = new System.Windows.Forms.Button();
             this.BtnAdd = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -228,8 +228,10 @@ namespace WinForm_With_EFCore
             this.DGVEmployees.Name = "DGVEmployees";
             this.DGVEmployees.ReadOnly = true;
             this.DGVEmployees.RowTemplate.Height = 25;
+            this.DGVEmployees.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DGVEmployees.Size = new System.Drawing.Size(618, 291);
             this.DGVEmployees.TabIndex = 2;
+            this.DGVEmployees.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVEmployees_CellClick);
             // 
             // tableLayoutPanel4
             // 
@@ -238,7 +240,7 @@ namespace WinForm_With_EFCore
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.Controls.Add(this.BtnDelete, 0, 3);
             this.tableLayoutPanel4.Controls.Add(this.BtnView, 0, 2);
-            this.tableLayoutPanel4.Controls.Add(this.BtnEdit, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.BtnUpdate, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.BtnAdd, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 297);
@@ -261,6 +263,7 @@ namespace WinForm_With_EFCore
             this.BtnDelete.TabIndex = 3;
             this.BtnDelete.Text = "Delete";
             this.BtnDelete.UseVisualStyleBackColor = true;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // BtnView
             // 
@@ -272,17 +275,19 @@ namespace WinForm_With_EFCore
             this.BtnView.TabIndex = 2;
             this.BtnView.Text = "View All";
             this.BtnView.UseVisualStyleBackColor = true;
+            this.BtnView.Click += new System.EventHandler(this.BtnView_Click);
             // 
-            // BtnEdit
+            // BtnUpdate
             // 
-            this.BtnEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnEdit.Location = new System.Drawing.Point(3, 75);
-            this.BtnEdit.Name = "BtnEdit";
-            this.BtnEdit.Size = new System.Drawing.Size(196, 66);
-            this.BtnEdit.TabIndex = 1;
-            this.BtnEdit.Text = "Edit";
-            this.BtnEdit.UseVisualStyleBackColor = true;
+            this.BtnUpdate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnUpdate.Location = new System.Drawing.Point(3, 75);
+            this.BtnUpdate.Name = "BtnUpdate";
+            this.BtnUpdate.Size = new System.Drawing.Size(196, 66);
+            this.BtnUpdate.TabIndex = 1;
+            this.BtnUpdate.Text = "Update";
+            this.BtnUpdate.UseVisualStyleBackColor = true;
+            this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // BtnAdd
             // 
@@ -331,12 +336,12 @@ namespace WinForm_With_EFCore
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView DGVEmployees;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Button BtnDelete;
         private System.Windows.Forms.Button BtnView;
-        private System.Windows.Forms.Button BtnEdit;
+        private System.Windows.Forms.Button BtnUpdate;
         private System.Windows.Forms.Button BtnAdd;
+        private System.Windows.Forms.DataGridView DGVEmployees;
     }
 }
 
