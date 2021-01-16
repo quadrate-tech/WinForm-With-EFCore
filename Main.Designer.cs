@@ -71,7 +71,7 @@ namespace WinForm_With_EFCore
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(713, 591);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(832, 591);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -84,7 +84,7 @@ namespace WinForm_With_EFCore
             this.tableLayoutPanel2.Controls.Add(this.TxtLastName, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.TxtFirstName, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(181, 32);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(211, 32);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -92,7 +92,7 @@ namespace WinForm_With_EFCore
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(529, 259);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(618, 259);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // TxtMobile
@@ -101,7 +101,7 @@ namespace WinForm_With_EFCore
             this.TxtMobile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxtMobile.Location = new System.Drawing.Point(3, 207);
             this.TxtMobile.Name = "TxtMobile";
-            this.TxtMobile.Size = new System.Drawing.Size(523, 29);
+            this.TxtMobile.Size = new System.Drawing.Size(612, 29);
             this.TxtMobile.TabIndex = 4;
             // 
             // TxtHomePhone
@@ -110,7 +110,7 @@ namespace WinForm_With_EFCore
             this.TxtHomePhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxtHomePhone.Location = new System.Drawing.Point(3, 156);
             this.TxtHomePhone.Name = "TxtHomePhone";
-            this.TxtHomePhone.Size = new System.Drawing.Size(523, 29);
+            this.TxtHomePhone.Size = new System.Drawing.Size(612, 29);
             this.TxtHomePhone.TabIndex = 3;
             // 
             // TxtAddress
@@ -119,7 +119,7 @@ namespace WinForm_With_EFCore
             this.TxtAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxtAddress.Location = new System.Drawing.Point(3, 105);
             this.TxtAddress.Name = "TxtAddress";
-            this.TxtAddress.Size = new System.Drawing.Size(523, 29);
+            this.TxtAddress.Size = new System.Drawing.Size(612, 29);
             this.TxtAddress.TabIndex = 2;
             // 
             // TxtLastName
@@ -128,7 +128,7 @@ namespace WinForm_With_EFCore
             this.TxtLastName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxtLastName.Location = new System.Drawing.Point(3, 54);
             this.TxtLastName.Name = "TxtLastName";
-            this.TxtLastName.Size = new System.Drawing.Size(523, 29);
+            this.TxtLastName.Size = new System.Drawing.Size(612, 29);
             this.TxtLastName.TabIndex = 1;
             // 
             // TxtFirstName
@@ -137,7 +137,7 @@ namespace WinForm_With_EFCore
             this.TxtFirstName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxtFirstName.Location = new System.Drawing.Point(3, 3);
             this.TxtFirstName.Name = "TxtFirstName";
-            this.TxtFirstName.Size = new System.Drawing.Size(523, 29);
+            this.TxtFirstName.Size = new System.Drawing.Size(612, 29);
             this.TxtFirstName.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -158,7 +158,7 @@ namespace WinForm_With_EFCore
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(172, 259);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(202, 259);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // label5
@@ -168,7 +168,7 @@ namespace WinForm_With_EFCore
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(3, 204);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(166, 55);
+            this.label5.Size = new System.Drawing.Size(196, 55);
             this.label5.TabIndex = 4;
             this.label5.Text = "Mobile Phone";
             // 
@@ -179,7 +179,7 @@ namespace WinForm_With_EFCore
             this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(3, 153);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(166, 51);
+            this.label4.Size = new System.Drawing.Size(196, 51);
             this.label4.TabIndex = 3;
             this.label4.Text = "Home Phone";
             // 
@@ -190,7 +190,7 @@ namespace WinForm_With_EFCore
             this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(3, 102);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(166, 51);
+            this.label3.Size = new System.Drawing.Size(196, 51);
             this.label3.TabIndex = 2;
             this.label3.Text = "Address";
             // 
@@ -201,7 +201,7 @@ namespace WinForm_With_EFCore
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(3, 51);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 51);
+            this.label2.Size = new System.Drawing.Size(196, 51);
             this.label2.TabIndex = 1;
             this.label2.Text = "Last Name";
             // 
@@ -212,7 +212,7 @@ namespace WinForm_With_EFCore
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 51);
+            this.label1.Size = new System.Drawing.Size(196, 51);
             this.label1.TabIndex = 0;
             this.label1.Text = "First Name";
             // 
@@ -220,13 +220,15 @@ namespace WinForm_With_EFCore
             // 
             this.DGVEmployees.AllowUserToAddRows = false;
             this.DGVEmployees.AllowUserToDeleteRows = false;
+            this.DGVEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGVEmployees.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DGVEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVEmployees.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DGVEmployees.Location = new System.Drawing.Point(181, 297);
+            this.DGVEmployees.Location = new System.Drawing.Point(211, 297);
             this.DGVEmployees.Name = "DGVEmployees";
             this.DGVEmployees.ReadOnly = true;
             this.DGVEmployees.RowTemplate.Height = 25;
-            this.DGVEmployees.Size = new System.Drawing.Size(529, 291);
+            this.DGVEmployees.Size = new System.Drawing.Size(618, 291);
             this.DGVEmployees.TabIndex = 2;
             // 
             // tableLayoutPanel4
@@ -246,7 +248,7 @@ namespace WinForm_With_EFCore
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(172, 291);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(202, 291);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
             // BtnDelete
@@ -255,7 +257,7 @@ namespace WinForm_With_EFCore
             this.BtnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnDelete.Location = new System.Drawing.Point(3, 219);
             this.BtnDelete.Name = "BtnDelete";
-            this.BtnDelete.Size = new System.Drawing.Size(166, 69);
+            this.BtnDelete.Size = new System.Drawing.Size(196, 69);
             this.BtnDelete.TabIndex = 3;
             this.BtnDelete.Text = "Delete";
             this.BtnDelete.UseVisualStyleBackColor = true;
@@ -266,7 +268,7 @@ namespace WinForm_With_EFCore
             this.BtnView.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnView.Location = new System.Drawing.Point(3, 147);
             this.BtnView.Name = "BtnView";
-            this.BtnView.Size = new System.Drawing.Size(166, 66);
+            this.BtnView.Size = new System.Drawing.Size(196, 66);
             this.BtnView.TabIndex = 2;
             this.BtnView.Text = "View All";
             this.BtnView.UseVisualStyleBackColor = true;
@@ -277,7 +279,7 @@ namespace WinForm_With_EFCore
             this.BtnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnEdit.Location = new System.Drawing.Point(3, 75);
             this.BtnEdit.Name = "BtnEdit";
-            this.BtnEdit.Size = new System.Drawing.Size(166, 66);
+            this.BtnEdit.Size = new System.Drawing.Size(196, 66);
             this.BtnEdit.TabIndex = 1;
             this.BtnEdit.Text = "Edit";
             this.BtnEdit.UseVisualStyleBackColor = true;
@@ -288,7 +290,7 @@ namespace WinForm_With_EFCore
             this.BtnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnAdd.Location = new System.Drawing.Point(3, 3);
             this.BtnAdd.Name = "BtnAdd";
-            this.BtnAdd.Size = new System.Drawing.Size(166, 66);
+            this.BtnAdd.Size = new System.Drawing.Size(196, 66);
             this.BtnAdd.TabIndex = 0;
             this.BtnAdd.Text = "Save";
             this.BtnAdd.UseVisualStyleBackColor = true;
@@ -298,7 +300,7 @@ namespace WinForm_With_EFCore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 591);
+            this.ClientSize = new System.Drawing.Size(832, 591);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Main";
             this.Text = "Main";
