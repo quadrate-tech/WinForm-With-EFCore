@@ -13,7 +13,7 @@ namespace WinForm_With_EFCore.DAL
 
         public Employee Create(Employee emp)
         {
-            var data = empContext.Add(new Employee { FirstName = emp.FirstName, LastName = emp.LastName, Address = emp.Address, HomePhone = emp.HomePhone, Mobile = emp.Mobile });
+            var data = empContext.Add(emp);
             empContext.SaveChanges();
             return data.Entity;
         }

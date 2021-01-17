@@ -52,23 +52,40 @@ namespace WinForm_With_EFCore
         {
             emp.Id = Convert.ToInt32(DGVEmployees.SelectedRows[0].Cells[0].Value.ToString());
             label6.Text = emp.Id.ToString();
-            //emp.FirstName = DGVEmployees.SelectedRows[0].Cells[1].Value.ToString();
-            //emp.LastName = DGVEmployees.SelectedRows[0].Cells[2].Value.ToString();
-            //emp.Address = DGVEmployees.SelectedRows[0].Cells[3].Value.ToString();
-            //emp.HomePhone = DGVEmployees.SelectedRows[0].Cells[4].Value.ToString();
-            //emp.Mobile = DGVEmployees.SelectedRows[0].Cells[5].Value.ToString();
-            TxtFirstName.Text = emp.FirstName = DGVEmployees.SelectedRows[0].Cells[1].Value.ToString(); 
-            TxtLastName.Text = emp.LastName = DGVEmployees.SelectedRows[0].Cells[2].Value.ToString();
-            TxtAddress.Text = emp.Address = DGVEmployees.SelectedRows[0].Cells[3].Value.ToString();
-            TxtHomePhone.Text = emp.HomePhone = DGVEmployees.SelectedRows[0].Cells[4].Value.ToString(); 
-            TxtMobile.Text = emp.Mobile = DGVEmployees.SelectedRows[0].Cells[5].Value.ToString();
+            emp.FirstName = DGVEmployees.SelectedRows[0].Cells[1].Value.ToString();
+            emp.LastName = DGVEmployees.SelectedRows[0].Cells[2].Value.ToString();
+            emp.Address = DGVEmployees.SelectedRows[0].Cells[3].Value.ToString();
+            emp.HomePhone = DGVEmployees.SelectedRows[0].Cells[4].Value.ToString();
+            emp.Mobile = DGVEmployees.SelectedRows[0].Cells[5].Value.ToString();
+            //TxtFirstName.Text = emp.FirstName = DGVEmployees.SelectedRows[0].Cells[1].Value.ToString(); 
+            //TxtLastName.Text = emp.LastName = DGVEmployees.SelectedRows[0].Cells[2].Value.ToString();
+            //TxtAddress.Text = emp.Address = DGVEmployees.SelectedRows[0].Cells[3].Value.ToString();
+            //TxtHomePhone.Text = emp.HomePhone = DGVEmployees.SelectedRows[0].Cells[4].Value.ToString(); 
+            //TxtMobile.Text = emp.Mobile = DGVEmployees.SelectedRows[0].Cells[5].Value.ToString();
+
+            TxtFirstName.Text = emp.FirstName;
+            TxtLastName.Text = emp.LastName;
+            TxtAddress.Text = emp.Address;
+            TxtHomePhone.Text = emp.HomePhone;
+            TxtMobile.Text = emp.Mobile;
         }
 
         private void BtnDelete_Click(object sender, EventArgs e)
         {
-            var emp = GetEmployee();
-            empRepo.Delete(emp);
-            LoadDGV();
+            try
+            {
+                var emp = GetEmployee();
+                if (emp != null)
+                {
+                    empRepo.Delete(emp);
+                    LoadDGV();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace); 
+            }
+
         }
 
         private void BtnView_Click(object sender, EventArgs e)
