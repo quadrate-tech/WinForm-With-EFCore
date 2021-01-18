@@ -24,6 +24,8 @@ namespace WinForm_With_EFCore.DAL
             empContext.SaveChanges();
         }
 
+        //Some Code Here
+
         public Employee Update(Employee employee)
         {
             var data = empContext.Update(employee);
