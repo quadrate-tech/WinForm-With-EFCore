@@ -20,15 +20,16 @@ namespace WinForm_With_EFCore.DAL
 
         public void Delete(Employee emp)
         {
-            empContext.Remove(emp);
-            empContext.SaveChanges();
+            using EmployeeContext empCont = new EmployeeContext();
+            empCont.Remove(emp);
+            empCont.SaveChanges();
         }
 
         //Some Code Here
 
-        public Employee Update(Employee employee)
+        public Employee Update(Employee emp)
         {
-            var data = empContext.Update(employee);
+            var data = empContext.Update(emp);
             empContext.SaveChanges();
             return data.Entity;
         }
