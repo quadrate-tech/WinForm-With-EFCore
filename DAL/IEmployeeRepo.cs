@@ -13,5 +13,7 @@ namespace WinForm_With_EFCore.DAL
         Employee Update(Employee employee);
 
         void Delete(Employee employee);
+
+        List<Employee> View();
     }
 }

@@ -7,9 +7,8 @@ namespace WinForm_With_EFCore
 {
     public partial class Main : Form
     {
-        private static EmployeeContext empContext = new EmployeeContext();
         readonly Employee emp = new Employee();
-        readonly EmployeeRepo empRepo = new EmployeeRepo(empContext);
+        readonly EmployeeRepo empRepo = new EmployeeRepo();
         public Main()
         {
             InitializeComponent();
@@ -17,8 +16,7 @@ namespace WinForm_With_EFCore
 
         public void LoadDGV()
         {
-            using EmployeeContext db = new EmployeeContext();
-            DGVEmployees.DataSource = db.Employees.ToList();
+            DGVEmployees.DataSource = empRepo.View();
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
@@ -57,12 +55,7 @@ namespace WinForm_With_EFCore
             emp.Address = DGVEmployees.SelectedRows[0].Cells[3].Value.ToString();
             emp.HomePhone = DGVEmployees.SelectedRows[0].Cells[4].Value.ToString();
             emp.Mobile = DGVEmployees.SelectedRows[0].Cells[5].Value.ToString();
-            //TxtFirstName.Text = emp.FirstName = DGVEmployees.SelectedRows[0].Cells[1].Value.ToString(); 
-            //TxtLastName.Text = emp.LastName = DGVEmployees.SelectedRows[0].Cells[2].Value.ToString();
-            //TxtAddress.Text = emp.Address = DGVEmployees.SelectedRows[0].Cells[3].Value.ToString();
-            //TxtHomePhone.Text = emp.HomePhone = DGVEmployees.SelectedRows[0].Cells[4].Value.ToString(); 
-            //TxtMobile.Text = emp.Mobile = DGVEmployees.SelectedRows[0].Cells[5].Value.ToString();
-
+  
             TxtFirstName.Text = emp.FirstName;
             TxtLastName.Text = emp.LastName;
             TxtAddress.Text = emp.Address;
