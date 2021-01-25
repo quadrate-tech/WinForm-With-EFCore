@@ -224,6 +224,7 @@ namespace WinForm_With_EFCore
             this.DGVEmployees.AllowUserToDeleteRows = false;
             this.DGVEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGVEmployees.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.DGVEmployees.BackgroundColor = System.Drawing.Color.White;
             this.DGVEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVEmployees.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGVEmployees.Location = new System.Drawing.Point(211, 297);
@@ -309,14 +310,15 @@ namespace WinForm_With_EFCore
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(211, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 21);
+            this.label6.Size = new System.Drawing.Size(19, 21);
             this.label6.TabIndex = 4;
-            this.label6.Text = "label6";
+            this.label6.Text = "0";
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(832, 591);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Main";
