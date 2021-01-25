@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Windows.Forms;
 using WinForm_With_EFCore.DAL;
 
@@ -7,7 +6,7 @@ namespace WinForm_With_EFCore
 {
     public partial class Main : Form
     {
-        readonly Employee emp = new Employee();
+        private readonly Employee emp = new Employee();
         readonly EmployeeRepo empRepo = new EmployeeRepo();
         public Main()
         {
